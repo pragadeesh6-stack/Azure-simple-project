@@ -64,7 +64,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
   admin_ssh_key {
     username   = "azureuser"
-    public_key = file("C:/Users/USER/.ssh/id_ed25519.pub") # replace with your path if different
+    public_key = file("id_rsa.pub") # replace with your path if different
   }
 }
 
